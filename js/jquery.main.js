@@ -44,15 +44,12 @@ function initRetinaCover() {
 
 //hide or show the "back to top" link
 function initBackToTop() {
-	var offset = 750;
+	var offset = 300;
 	var win = jQuery(window);
 	var item = jQuery('#btnBack');
 	
 	if (win.width() < 992) {
-		offset = 1000;
-	}
-	if (win.width() < 768) {
-		offset = 450;
+		offset = 200;
 	}
 	win.scroll(function(){
 		if( win.scrollTop() > offset ) {
